@@ -28,6 +28,7 @@ if __name__ == '__main__':
         soc_field_index = header.index(SOC_CODE_FIELD)
         soc_name_index = header.index(SOC_NAME_FIELD)
         status_index = header.index(STATUS)
+     
 
         soc_code_occurrences = defaultdict(int)
         soc_code_names = {}
