@@ -27,8 +27,7 @@ if __name__ == '__main__':
         # Find index of SOC CODE field
         soc_field_index = header.index(SOC_CODE_FIELD)
         soc_name_index = header.index(SOC_NAME_FIELD)
-        status_index = header.index(STATUS)
-     
+        status_index = header.index(STATUS)     
 
         soc_code_occurrences = defaultdict(int)
         soc_code_names = {}
@@ -39,6 +38,7 @@ if __name__ == '__main__':
             fields = line.split(';')
             soc_code = fields[soc_field_index]
             print(fields[soc_field_index])
+            fields.insert(0, 'LCA_CASE_SOC_CODE')
 
             # increment soc code in occurrences
             soc_code_occurrences[soc_code] += 1
