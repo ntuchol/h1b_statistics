@@ -37,7 +37,8 @@ if __name__ == '__main__':
 
         for line in input_file:
             fields = line.split(';')
-            print(soc_code = fields[soc_field_index])
+            soc_code = fields[soc_field_index]
+            print(fields[soc_field_index])
 
             # increment soc code in occurrences
             soc_code_occurrences[soc_code] += 1
