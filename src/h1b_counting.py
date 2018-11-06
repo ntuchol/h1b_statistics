@@ -38,7 +38,7 @@ if __name__ == '__main__':
             fields = line.split(';')
             soc_code = fields[soc_field_index]
             print(fields[soc_field_index])
-            fields.insert(0, 'LCA_CASE_SOC_CODE')
+            soc_code.insert(0, 'LCA_CASE_SOC_CODE')
 
             # increment soc code in occurrences
             soc_code_occurrences[soc_code] += 1
